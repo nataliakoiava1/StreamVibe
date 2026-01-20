@@ -28,14 +28,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-  overflow: auto;
-  scrollbar-width: none; 
-  -ms-overflow-style: none; 
+	line-height: 1;
 }
 
-body::-webkit-scrollbar {
-  display: none; 
-}
 
 ol, ul {
 	list-style: none;
