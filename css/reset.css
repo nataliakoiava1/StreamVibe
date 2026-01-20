@@ -28,8 +28,15 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+  overflow: auto;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
 }
+
+body::-webkit-scrollbar {
+  display: none; 
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -51,6 +58,4 @@ a{
 *{
     box-sizing: border-box;
 }
-body {
-  overflow: hidden;
-}
+
