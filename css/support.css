@@ -1,0 +1,301 @@
+
+body.no-hero .navbar {
+    background-image: none;
+            background: linear-gradient(
+        135deg,
+        #0f0f0f 0%,
+        #141414 45%,
+        #2b0f0f 100%
+    );
+    min-height: auto;
+}
+
+
+
+.support-section {
+    padding: 100px 0;
+  position: relative;
+    margin-left: 50px;
+}
+
+.support-page {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+
+.support {
+    background-image: url("../img/support.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+    background-position: right 60px;
+    width: 533px;
+}
+.Welcome{
+    font-size: 45px;
+   margin-top: -90px;
+}
+
+
+/* LEFT */
+
+.support p{
+    font-size: 18px;
+    color: #999999;
+    margin-top: 10px;
+    
+}
+
+
+/* RIGHT */
+.support-input {
+    width: 776px;
+    background: rgba(20,20,20,0.6);
+    border: 1px solid #262626;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+/* FORM GRID */
+#supportForm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full {
+    grid-column: span 2;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+input,
+textarea {
+    background: #141414;
+    border: 1px solid #262626;
+    padding: 15px;
+    color: #fff;
+    border-radius: 8px;
+}
+
+textarea {
+    height: 140px;
+    resize: none;
+}
+
+::placeholder {
+    color: #999999;
+}
+
+.send-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.send-btn:hover {
+    background: #cc0000;
+}
+
+
+
+
+/* FOOTER */
+.form-footer {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.checkbox {
+    font-size: 14px;
+    color: #999;
+}
+
+.popup-btn {
+    background: red;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.popup-btn:hover {
+    background: #cc0000;
+}
+
+#formStatus {
+    grid-column: span 2;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+.popup {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #141414;
+    color: white;
+    padding: 18px 24px;
+    border-radius: 12px;
+    border: 1px solid #262626;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 9999;
+}
+
+.popup.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.popup button:hover {
+                background: linear-gradient(
+        135deg,
+        #0f0f0f 0%,
+        #141414 45%,
+        #2b0f0f 100%
+    );
+}
+
+
+
+@media (max-width: 1024px) {
+    .support-page {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .support {
+        width: 100%;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .support img {
+        width: 80%;
+        margin: 20px auto 0;
+        display: block;
+    }
+
+    .support-input {
+    max-width: 776px;
+    width: 100%;
+    }
+
+    #supportForm {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .form-footer {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+        .form-group {
+        gap: 6px;
+    }
+
+        #supportForm {
+        grid-template-columns: 1fr;
+    }
+
+    .support-section {
+        padding: 50px 20px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .Welcome {
+        font-size: 32px;
+    }
+
+    .support{
+        margin-top: 60px;
+    }
+    .support p {
+        font-size: 16px;
+    }
+    .support-input {
+        padding: 20px;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    input,
+    textarea {
+        padding: 12px;
+    }
+
+    .send-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .support-section {
+        padding: 30px 15px;
+    }
+
+    .Welcome {
+        font-size: 26px;
+    }
+
+    .support p {
+        font-size: 14px;
+    }
+
+    .support-input {
+        padding: 15px;
+    }
+
+    textarea {
+        height: 120px;
+    }
+    #supportForm{
+        display: flex;
+        flex-direction: column;
+    }
+    .popup{
+        width: 80%;
+    }
+    .support{
+        margin-top: 70px;
+    }
+}
+

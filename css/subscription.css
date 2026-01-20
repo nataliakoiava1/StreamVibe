@@ -1,0 +1,154 @@
+.subscription{
+    position: relative;
+}
+
+body.no-hero .navbar {
+    background-image: none;
+            background: linear-gradient(
+        135deg,
+        #0f0f0f 0%,
+        #141414 45%,
+        #2b0f0f 100%
+    );
+    min-height: auto;
+}
+
+.plans-compare {
+              background: linear-gradient(
+        135deg,
+        #0f0f0f 0%,
+        #141414 45%,
+        #2b0f0f 100%
+    );
+  padding: 100px 0;
+  color: #fff;
+}
+
+.plans-header {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+}
+
+.plans-header h2 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.plans-header p {
+  color: #aaa;
+  max-width: 700px;
+}
+
+.plans-table {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #222;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  background: linear-gradient(180deg, #151515, #101010);
+}
+
+.table-row div {
+  padding: 20px;
+  border-right: 1px solid #222;
+  border-bottom: 1px solid #222;
+  font-size: 14px;
+}
+
+.table-row div:last-child {
+  border-right: none;
+}
+
+.table-head {
+  background: #000;
+  font-weight: 600;
+}
+
+.popular {
+  background: #e50914;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  margin-left: 8px;
+}
+
+@media (max-width: 1024px) {
+
+  .plans-header {
+    padding: 0 24px;
+  }
+
+  .plans-table {
+    margin: 0 24px;
+  }
+
+  .table-row {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+
+  .plans-compare {
+    padding: 60px 0;
+  }
+
+  .plans-header h2 {
+    font-size: 28px;
+  }
+
+  .plans-header p {
+    font-size: 14px;
+  }
+
+  .plans-table {
+    border: none;
+  }
+
+  .table-row {
+    grid-template-columns: 1fr;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .table-row div {
+    border-right: none;
+    border-bottom: 1px solid #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .table-head {
+    display: none;
+  }
+
+  .table-row div::before {
+    content: attr(data-label);
+    color: #aaa;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .plans-header h2 {
+    font-size: 24px;
+  }
+
+  .table-row div {
+    padding: 14px;
+    font-size: 13px;
+  }
+
+  .popular {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+}

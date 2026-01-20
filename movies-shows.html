@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamVibe</title>
+    <link rel="icon" type="image/png" href="img/Vector.svg">
+    <link rel="stylesheet" href="css/movie.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+
+    <header>
+      <div id="navbar-placeholder"></div>
+    </header>
+
+<!-- Carousel -->
+<div class="carousel-container">
+  <div class="carousel-slide">
+    <img src="img/Stranger_Things_logo.svg" alt="Slide 1">
+    <img src="img/NfkIiB.svg" alt="Slide 2">
+    <img src="img/marvel-s-spider-man-2-pc-steam-cover.svg" alt="Slide 3">
+  </div>
+  <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
+</div>
+
+<h1 class="heading">Popular Movies</h1>
+
+<div class="movies-container" id="movies"></div>
+
+<!-- Modal -->
+<div class="modal" id="trailerModal">
+  <div class="modal-content">
+    <span class="close" id="closeModal">&times;</span>
+    <iframe id="trailerFrame" allowfullscreen></iframe>
+  </div>
+</div>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/movie.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

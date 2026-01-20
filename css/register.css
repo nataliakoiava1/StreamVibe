@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #0f0f0f 0%,
+        #141414 45%,
+        #2b0f0f 100%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.auth-container {
+    background: #121212;
+    padding: 40px;
+    width: 350px;
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+}
+
+.auth-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.auth-container input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    background: #1f1f1f;
+    color: white;
+}
+
+.auth-container input::placeholder {
+    color: #aaa;
+}
+
+.auth-container button {
+    width: 100%;
+    padding: 14px;
+    background: #e50914;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.auth-container button:hover {
+    background: #ff0f1a;
+}
+
+.switch {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.switch a {
+    color: #e50914;
+    text-decoration: none;
+}
+
+.password-field {
+    position: relative;
+}
+
+.password-field input {
+    width: 100%;
+    padding: 14px 40px 14px 14px;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #aaa;
+}
+
+.toggle-password:hover {
+    color: white;
+}
+
+.error {
+    color: #e50914;
+    font-size: 13px;
+    margin-top: -5px;
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+input.error-border {
+    border: 1px solid #e50914;
+}
